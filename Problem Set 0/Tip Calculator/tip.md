@@ -14,13 +14,13 @@ tip is calculated, which is the product of dollars and percent.
 
 "dollars_to_float" function is now defined, and what it does is remove the dollar sign from the dollar variable and make it just a floating point number.
 
-I did this using the ".removeprefix()" method which removes whatever string that comes before our main string. This unwanted string is indicated inside the braces.
+I did this using the ".removeprefix()" method which removes whatever string that comes before our main string. This unwanted string is indicated inside the braces in quotes.
 
 After this, the new string is converted to a float and this float is returned to the function so that the function can perform as expected when it is called upon
 
 "percent_to_float" function is also defined, and what it does is remove the percentage sign from the percent variable, making it a floating point number.
 
-I did this using the ".removesuffix()" method which removes whatever string that comes after our main string. This unwanted string is indicated inside the braces.
+I did this using the ".removesuffix()" method which removes whatever string that comes after our main string. This unwanted string is indicated inside the braces in quotes.
 
 After this, the new string is converted to a float and divided by 100. The resulting value is returned to the function so that the function can perform as expected when it is called upon
 
