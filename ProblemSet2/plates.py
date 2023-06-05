@@ -7,21 +7,31 @@ def main():
 
 
 def is_valid(s):
-    num = len(s)
-    if num >= 2 and num <= 6:
-        i = 2
-        j = 2
-        for i in range(num):
-            if (s[0:i].isalpha() and s[0:i].isupper()):
-                for j in range(num):
-                    if (s[j:].isdigit() and s[j] != "0"):
-                        for k in s:
-                            if not k == [" ", ".", ",", "?", "!", ";", ":", '"']:
-                                return True
-                            else:
-                                return False
-                        else:
-                            return False
-            
+    length = len(s)
+
+    if length < 2 or length >= 6:
+        return False
     
+    if not s[0:2].isalpha():
+        return False
+    
+    for i in range(length):
+        if s[i].isnumeric():
+            if s[i] == '0':
+                return False
+            
+            for j in range(i+1, length):
+                if s[j].isalpha():
+                    return False
+                break
+
+        if not s.isalnum():
+            return False
+        
+    return True
+                
+
 main()
+
+    
+    
