@@ -1,6 +1,6 @@
+#set the fixed amount to be equal to 50
 fix = int(50)
 
-#prompt the user for an input and perform the necessary calculations until all the money is spent
 while fix > 0:
     print ("Amount due:", fix)
 

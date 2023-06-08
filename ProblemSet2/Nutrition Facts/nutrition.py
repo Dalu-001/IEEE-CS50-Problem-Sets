@@ -1,5 +1,7 @@
-item = input ("Item: ").lower()
+#prompt the user to input an item
+item = input ("Item: ").strip().lower()
 
+#create a dictionary of fruits(keys) and their corresponding calories(lists)
 fruit = {
     "apple": "130",
     "avacado": "50",
@@ -23,5 +25,9 @@ fruit = {
     "watermelon": "80"
 }
 
+#check if the item inputted is in the dictionary and print the calories corresponding to that fruit or item inputted.
 if item in fruit:
     print("Calories:", fruit[item])
+
+else:
+    print("Enter a fruit from the list given")
