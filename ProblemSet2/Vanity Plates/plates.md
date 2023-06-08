@@ -24,3 +24,6 @@ It also checks if the first number encountered is a non-zero number. If it is th
 
 After that, it checks for white spaces, periods, or punctuation marks. If any of these are encountered, the code breaks.
 
+Now if all of the right conditions are met, the code returns True to the "is_valid()" function that was called in main(). If it meets any false conditions or any condition that causes it to break, it returns False to the "is_valid()" function.
+
+The Main function is now called which now prints "Valid" if True is returned to the "is_valid()" function or "Invalid" if False is returned to the "is_valid()" function.
